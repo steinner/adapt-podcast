@@ -1,0 +1,14 @@
+{
+  "name": "adapt-podcast",
+  "version": "1.0.0",
+  "description": "Vídeo único na página.",
+  "main": "js/adapt-capaInicial.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bower": "^1.2.5"
+  }
+}

@@ -1,0 +1,25 @@
+<div class="component__inner podcastPage__inner">
+    <div class="lines-decor"></div>
+
+    <div class="container flex-center">        
+        <div class="cont-podcast">            
+            {{#if _media._source}}
+                <iframe width="100%" height="100%" style="width:100%;"
+                src="{{_media._source~}}
+                ?&autoplay={{#if _media._autoplay}}1{{else}}0{{/if~}}
+                &rel={{#if _media._showRelated}}1{{else}}0{{/if~}}
+                &loop={{#if _loop}}1{{else}}0{{/if~}}
+                &modestbranding={{#if _media._modestBranding}}1{{else}}0{{/if~}}
+                &color={{#if _media._progressColor}}{{_media._progressColor}}{{/if~}}
+                &controls={{#if _media._controls}}1{{else}}0{{/if~}}
+                &playsinline={{#if _media._playsinline}}1{{else}}0{{/if~}}
+                &enablejsapi=1&iv_load_policy={{#if _media._showAnnotations}}1{{else}}3{{/if~}}"
+                {{#if _media._allowFullscreen}} allowfullscreen="true"{{/if}}
+                frameborder="0">
+                </iframe>
+            {{else}}
+                ERROR: Vídeo não incluido
+            {{/if}}   
+        </div>
+    </div>
+</div>
